@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:color/holo_green_light">
+
+            <ImageView
+                android:id="@+id/thongtin"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="355dp"
+                android:src="@drawable/ic_img_avatar" />
+
+            <ImageView
+                android:id="@+id/qua"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="271dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="110dp"
+                android:src="@drawable/ic_gift" />
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="318dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="63dp"
+                android:src="@drawable/ic_map" />
+
+            <ImageView
+                android:id="@+id/thongbao"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="367dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="14dp"
+                android:src="@drawable/ic_thongbao" />
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="269dp"
+                android:text="Võ Lập"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="269dp"
+                android:text="0 điểm"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/ic_card_background"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:src="@drawable/ic_card_front" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="CHẠM VÀO ĐỂ MỞ THẺ TÍCH ĐIỂM"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu đãi dành cho bạn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="337dp"
+                    android:layout_height="198dp"
+                    android:src="@drawable/km14" />
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Tin tức"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:textStyle="bold"
+                  android:textColor="#000"/>
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/rcv1_home"
+                  android:layout_width="392dp"
+                  android:layout_height="438dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="5dp" />
+
+          </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_mua_trasua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#00000000"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_chon_ts"
+        app:borderWidth="0dp"
+        app:fabCustomSize="100dp"
+        app:fabSize="normal"
+        app:maxImageSize="95dp" />/>
+</RelativeLayout>
